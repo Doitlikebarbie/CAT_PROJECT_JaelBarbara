@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jael-Portfolio></title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Jael Barbara</h1>
+            <p> Aspiring Web Developer &amp; Designer</p>
+        </div>
+    </section>
+
+    <section id="----" class="----">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Jael. I exhibit a keen passion for coding.<br> I have a committment to stay updated with industry trends and adopting innovative approaches.</p>
+            <div class="in-titles">
+                <p class="in-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="in-links" onclick="opentab('education')">Studies</p>
+            </div>
+            <div class="in-content active-tab" id="skills">
+                <ul>
+                    <li><span>dancing</span><br>I dance for fun</li>
+                    <li><span>Designing</span><br>Designing web pages</li>
+                    <li><span>bug bounty</span><br>I have prior experience in finding vulnerabilities in apps for fun </li>
+                </ul>
+            </div>
+            
+            <div class="in-content" id="education">
+                <ul>
+                    <li><span>Mentored</span><br>With the help of my many anonymous friends online a certain Agent------</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to contact me via email at Zion@gmail.com</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>\------(o-o)------/</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" ><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.snapchat.com/" ><i class='bx bxl-snapchat'></i></a>
+                <a href="https://www.linkedin.com/" ><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script >
+        
+        var inlinks = document.getElementsByClassName("in-links");
+        var incontent = document.getElementsByClassName("in-content");
+
+        function opentab(inname){
+            for(i of inlinks){
+                i.classList.remove("active-link")
+            }
+            for(o of incontent){
+                o.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(inname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
